@@ -120,6 +120,29 @@ Reranking = Reorder retrieved results
 
 ```
 
+```sh
+                     User
+                       |
+                       v
+
+                +-------------+
+                |     LLM     |
+                +-------------+
+                  ^    ^    ^
+                  |    |    |
+                  |    |    |
+             Memory   RAG  Tools
+                  |    |    |
+                  v    v    v
+
+         User Data  Knowledge  Actions
+
+                       |
+                       v
+
+                    Answer
+```
+
 ## Important to know
 
 ```sh
