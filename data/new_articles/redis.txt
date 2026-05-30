@@ -1,0 +1,19 @@
+Redis is an open-source, in-memory data structure store that is commonly used as a database, cache, and message broker. It is known for its high performance and low latency because data is stored primarily in memory rather than on disk.
+
+Redis supports a variety of data structures including strings, hashes, lists, sets, sorted sets, bitmaps, and streams. This flexibility allows developers to model different types of application data efficiently.
+
+One of the most common use cases for Redis is caching. Applications frequently store expensive database query results in Redis so that future requests can be served quickly without repeatedly accessing the primary database. This can significantly reduce response times and improve scalability.
+
+Redis also provides persistence options. Although it is primarily an in-memory system, data can be periodically written to disk using snapshotting or append-only file mechanisms. These features help reduce the risk of data loss during system failures.
+
+Another popular use case is session storage. Web applications often store user session data in Redis because it provides fast read and write operations. This enables applications to handle large numbers of concurrent users efficiently.
+
+Redis supports replication, allowing data to be copied from a primary node to one or more replica nodes. Replication can improve read scalability and increase system availability.
+
+For high availability, Redis provides Redis Sentinel, which monitors instances and can automatically perform failover when a primary node becomes unavailable.
+
+Redis Cluster enables horizontal scaling by distributing data across multiple nodes. This allows Redis deployments to handle larger datasets and higher request volumes than a single server could support.
+
+Many modern applications use Redis for real-time analytics, rate limiting, leaderboards, distributed locking, and pub/sub messaging systems. These use cases take advantage of Redis's speed and support for specialized data structures.
+
+Redis is frequently used alongside relational databases such as PostgreSQL and MySQL. In these architectures, Redis acts as a high-speed caching layer while the relational database remains the primary source of truth.
